@@ -14,16 +14,18 @@ import java.util.List;
 
 @SpringBootApplication
 @RestController
-public class StudentManagementApplication {
+public class Application {
+
+
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(StudentManagementApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 	@GetMapping("/hello")
 	public String hello() {
-		return "Hello, World!";
+		return "hello, World";
 	}
 
 
